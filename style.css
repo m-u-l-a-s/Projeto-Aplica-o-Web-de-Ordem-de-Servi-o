@@ -1,6 +1,7 @@
 body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #19282B;
 }
 
 .conteudo {
@@ -10,7 +11,7 @@ body {
     border-top: none;
     width: 400px;
     text-align: center;
-    background-color: rgba(211, 211, 211, 0.541);
+    background-color: #007490;
     border-radius: 5px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -26,25 +27,22 @@ body {
     border-bottom: none;
     width: 440px;
     height: 40px;
-    /*background-color: rgb(243, 82, 82);*/
-    background-color: rgb(177, 176, 176);
-}
-
-.header li a:hover{
-    color: black;    
+    background-color: #721940;   
 }
 
 /*top, right, bottom, left */
-ul{
-    list-style-type: none;
-    text-align: end;
+.header a {
+    margin-right: 10px;
+    color: #FFF5DC;
     margin: 2% 2% 4% 0%;
-}
-
-li{
     float: right;
 }
-.header li a {
+
+.header a:hover{
+    color: black;    
+}
+
+.header a {
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: bold;
@@ -52,8 +50,8 @@ li{
 }
 
 h1 {
-    background-color: #282828;
-    color: red;
+    background-color: #19282B;
+    color: #FFF5DC;
     border-radius: 10px;
 }
 
