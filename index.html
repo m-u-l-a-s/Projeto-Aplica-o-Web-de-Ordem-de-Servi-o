@@ -7,32 +7,35 @@
     <link rel="stylesheet" href="style.css">
     <title>API das mulas</title>
 </head>
-<body>
+<body background="./cover.jpg" style="background-repeat: no-repeat; background-size: cover;">
 
     <div class="header">
         <ul>
-            <li> <a href="./index.html">Reportar Um Problema</a> </li>
-            <li> <a href="./consulta.html">Consultar</a> </li>
-        </ul>
+            <li><a href="./index.html" class="active">Reportar Um Problema</a></li>
+            <li><a href="./consulta.html">Consultar</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+            <li><a href="./sobre.html">Sobre</a></li>
+          </ul>
     </div>
 
-    <div class="conteudo">
+    <div class="conteudo" id="conteudo">
 
-        <h1>Laboratórios Fatec</h1>
-        <p>Bem vindes à plataforma de solução de problemas dos laboratórios de informática da Faculdade de Tecnologia de São Paulo - Campus São José dos Campos.</p>
+        <h1>BIOS : Fatec</h1>
+        <p>Plataforma de solução de problemas dos laboratórios de informática da Faculdade de Tecnologia de São Paulo - Campus São José dos Campos.</p>
         
         <h3>Reporte um problema abaixo</h3>
-
-        <p>Laboratório: <input type="text" name="report" id="report"></p>
-        <br><br>
+        <p>Laboratório: <input type="text" name="report" id="lab"></p>
+        <br>
         
-        <p>Máquina: <input type="text" name="report" id="report"></p>
-        <br><br>
+        <p>Máquina: <input type="text" name="report" id="maq"></p>
+        <br>
         
-        <p>Problema: <input type="text" name="report" id="report"></p>
+        <p>Problema: <input type="text" name="report" id="prob"></p>
+        <br>
+        <input type="submit" value="Enviar" id="submit">
         <br><br>
-        <input type="submit" value="Enviar">
-        <br><br>
+        <img src="./lab302.png" alt="" id="lab-layout">
     </div>
+    <script src="./main.js"></script>
 </body>
 </html>
