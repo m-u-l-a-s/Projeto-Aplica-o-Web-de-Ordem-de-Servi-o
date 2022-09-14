@@ -2,6 +2,8 @@
 const submit = document.getElementById("submit");
 const storage = window.localStorage;
 const d = new Date();
+semana = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"]
+ano = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
 let ordens = []
 
 function cleanField() {
@@ -31,10 +33,8 @@ function createOS() {
     let prob = document.createElement("p")
     let status = document.createElement("p")
     let date = document.createElement("p")
-    let hora = d.getDate()
-    .toString() + "/" + d.getMonth()
-    .toString() + "/" + d.getFullYear()
-    .toString()
+
+    let dia = `${semana[d.getDay()]}, ${d.getDate()} de ${ano[d.getMonth()]} de ${d.getFullYear()} às ${d.getHours()} horas e ${d.getMinutes()} minutos.`
     let resolvido = document.createElement("button")
     resolvido.innerText = "Resolvido!"
     let excluir = document.createElement("button")
@@ -44,7 +44,7 @@ function createOS() {
     maq.textContent = "Máquina: "+storage.getItem("maq")
     prob.textContent = "Problema: "+storage.getItem("prob")
     status.textContent = "Status: Pendente"
-    date.textContent = "Reportado em: "+hora
+    date.textContent = "Reportado em: "+dia
 
     os.appendChild(lab)
     os.appendChild(maq)
